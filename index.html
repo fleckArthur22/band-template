@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style-type: none;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .navbar {
+        background-color: black;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+
+      .navbar ul {
+        display: flex;
+      }
+
+      .navbar ul li {
+        padding: 15px 25px;
+        cursor: pointer;
+      }
+
+      .navbar ul li:hover {
+        background-color: rgb(156, 156, 156);
+      }
+
+      .navbar ul li a {
+        color: white;
+      }
+
+      /**/
+
+      .content {
+        position: relative;
+      }
+
+      .content img {
+        width: 100%;
+      }
+
+      .content .parag {
+        position: absolute;
+        bottom: 7%;
+        left: 40%;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="menu">
+        <ul class="menu-container">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">BAND</a></li>
+          <li><a href="#">TOUR</a></li>
+          <li><a href="#">CONTACT</a></li>
+          <li><a href="#">MORE</a></li>
+        </ul>
+      </div>
+
+      <div class="search"></div>
+    </div>
+
+    <div class="content">
+      <img src="./chicago.jpg" alt="" />
+      <div class="parag">
+        <p>Chicago</p>
+        <p>Thank you, Chicago - A night we won't forget.</p>
+      </div>
+    </div>
+  </body>
+</html>
